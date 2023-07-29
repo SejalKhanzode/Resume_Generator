@@ -1,0 +1,63 @@
+.container {
+  padding: 50px 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  background: linear-gradient(to right, #e0f0d7, #78ffd6);
+  min-height: 85vh;
+}
+
+.heading {
+  margin: 0 auto;
+  max-width: 500px;
+  color: #000;
+  font-size: 3.1rem;
+  line-height: 4.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.user-image{
+  padding:0.5rem;
+  z-index:-9;
+  width: 400px;
+  height: 300px;
+  transition:all 1s;
+  animation: scaleImage 5s linear infinite;
+}
+
+.icon-hat{
+  z-index:9;
+  bottom:-1rem;
+  right: 5px;;
+  height: 300px;
+  width: 100px;
+  animation-name:dotsAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnimation {
+  0%{
+      transform:translateY(0px);
+  }
+  50%{
+      transform: translateY(-25px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+  
+}
+
+
+.heading span {
+  background-clip: text;
+  background-image: linear-gradient(to right, #239ce2, #1369b9);
+  color: transparent;
+}
+
+
